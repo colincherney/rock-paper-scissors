@@ -38,4 +38,12 @@ function playRound(computer, player) {
   }
 }
 
-playRound(computerSelection(), playerSelection());
+function game() {
+  let x = 0;
+  while (x <= 4) {
+    playRound(computerSelection(), playerSelection());
+    x++;
+  }
+}
+
+game();
