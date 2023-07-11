@@ -1,20 +1,8 @@
-function computerSelection() {
+function playRound(player) {
   let randnum = Math.floor(Math.random() * 3);
   let choices = ["rock", "paper", "scissors"];
-  let computerDecision = choices[randnum];
-  return computerDecision;
-}
+  let computer = choices[randnum];
 
-function playerSelection() {
-  while (true) {
-    let decision = prompt("Choose rock, paper, or scissors!").toLowerCase();
-    if (decision == "rock" || decision == "paper" || decision == "scissors") {
-      return decision;
-    }
-  }
-}
-
-function playRound(computer, player) {
   if (computer == player) {
     console.log("Tie Game!");
   }
@@ -38,12 +26,12 @@ function playRound(computer, player) {
   }
 }
 
-function game() {
-  let x = 0;
-  while (x <= 4) {
-    playRound(computerSelection(), playerSelection());
-    x++;
-  }
-}
+// function game() {
+//   let x = 0;
+//   while (x <= 4) {
+//     playRound(computerSelection(), playerSelection());
+//     x++;
+//   }
+// }
 
-game();
+// game();
