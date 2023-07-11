@@ -5,12 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chela+One&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <h1 class="header">Rock, Paper, Scissors</h1>
     <div class="buttons">
-      <button onclick="playGame('rock')" class="button"></button>
-      <button onclick="playGame('paper')" class="button"></button>
-      <button onclick="playGame('scissors')" class="button"></button>
+      <img onclick="playGame('rock')" class="button" src="images/rock.png" />
+      <img onclick="playGame('paper')" class="button" src="images/paper.png" />
+      <img
+        onclick="playGame('scissors')"
+        class="button"
+        src="images/scissors.png"
+      />
     </div>
 
     <div class="playerScore">
