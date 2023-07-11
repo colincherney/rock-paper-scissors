@@ -1,0 +1,15 @@
+.playerScore {
+  display: flex;
+  gap: 1rem;
+}
+
+.computerScore {
+  display: flex;
+  gap: 1rem;
+}
+
+.roundOutcome {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}

@@ -4,12 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="buttons">
-      <button onclick="playRound('rock')">Rock</button>
-      <button onclick="playRound('paper')">Paper</button>
-      <button onclick="playRound('scissors')">Scissors</button>
+      <button onclick="playGame('rock')">Rock</button>
+      <button onclick="playGame('paper')">Paper</button>
+      <button onclick="playGame('scissors')">Scissors</button>
+    </div>
+
+    <div class="playerScore">
+      <h1>Your Score:</h1>
+      <h1 id="playerScoreUpdate">0</h1>
+    </div>
+    <div class="computerScore">
+      <h1>Computer Score:</h1>
+      <h1 id="computerScoreUpdate">0</h1>
+    </div>
+    <div class="roundOutcome">
+      <h1>Round Outcome:</h1>
+      <h2 id="print"></h2>
+    </div>
+    <div class="gameOutcome">
+      <h1 id="outcome"></h1>
+    </div>
+    <div class="reset">
+      <button onclick="resetGame()">Reset Game</button>
     </div>
 
     <script src="script.js"></script>
