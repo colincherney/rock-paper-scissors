@@ -15,10 +15,21 @@
   <body>
     <h1 class="header">Rock, Paper, Scissors</h1>
     <div class="buttons">
-      <img onclick="playGame('rock')" class="button" src="images/rock.png" />
-      <img onclick="playGame('paper')" class="button" src="images/paper.png" />
+      <img
+        onclick="playGame('rock')"
+        id="rock"
+        class="button"
+        src="images/rock.png"
+      />
+      <img
+        onclick="playGame('paper')"
+        id="paper"
+        class="button"
+        src="images/paper.png"
+      />
       <img
         onclick="playGame('scissors')"
+        id="scissors"
         class="button"
         src="images/scissors.png"
       />
@@ -31,10 +42,6 @@
     <div class="computerScore">
       <h1>Computer Score:</h1>
       <h1 id="computerScoreUpdate">0</h1>
-    </div>
-    <div class="roundOutcome">
-      <h1>Round Outcome:</h1>
-      <h2 id="print"></h2>
     </div>
     <div class="gameOutcome">
       <h1 id="outcome"></h1>
