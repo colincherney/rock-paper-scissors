@@ -14,6 +14,8 @@
   </head>
   <body>
     <h1 class="header">Rock, Paper, Scissors</h1>
+
+    <!-- Buttons -->
     <div class="buttons">
       <img
         onclick="playGame('rock')"
@@ -35,17 +37,18 @@
       />
     </div>
 
-    <div class="playerScore">
-      <h1>Your Score:</h1>
-      <h1 id="playerScoreUpdate">0</h1>
+    <!-- Scoreboard -->
+    <div class="scoreboard">
+      <div class="playerScore">
+        <h1>You:</h1>
+        <h1 id="playerScoreUpdate">0</h1>
+      </div>
+      <div class="computerScore">
+        <h1>Opponent:</h1>
+        <h1 id="computerScoreUpdate">0</h1>
+      </div>
     </div>
-    <div class="computerScore">
-      <h1>Computer Score:</h1>
-      <h1 id="computerScoreUpdate">0</h1>
-    </div>
-    <div class="gameOutcome">
-      <h1 id="outcome"></h1>
-    </div>
+
     <div class="reset">
       <button onclick="resetGame()">Reset Game</button>
     </div>

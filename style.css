@@ -20,26 +20,6 @@ body {
   transform: scale(1.5);
 }
 
-.playerScore {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  margin-top: 50px;
-}
-
-.computerScore {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-}
-
-.roundOutcome {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-  justify-content: center;
-}
-
 .reset {
   display: flex;
   justify-content: center;
@@ -51,4 +31,23 @@ body {
   font-family: "Chela One", cursive;
   font-size: 60px;
   color: white;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: center;
+  font-family: "Chela One", cursive;
+  gap: 50rem;
+  color: white;
+  font-size: 20px;
+}
+
+.playerScore {
+  display: flex;
+  gap: 1rem;
+}
+
+.computerScore {
+  display: flex;
+  gap: 1rem;
 }
