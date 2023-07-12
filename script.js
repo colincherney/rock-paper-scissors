@@ -60,11 +60,11 @@ function playGame(player) {
   }
   // if player wins
   if (personWinCounter == 5) {
-    document.getElementById("outcome").innerHTML = "You Win!";
+    gameResult("#3dc24c");
   }
   // if computer wins
   if (computerWinCounter == 5) {
-    document.getElementById("outcome").innerHTML = "You Lost";
+    gameResult("#d5452a");
   }
 }
 
@@ -74,6 +74,8 @@ function resetGame() {
 
   document.getElementById("computerScoreUpdate").innerHTML = 0;
   document.getElementById("playerScoreUpdate").innerHTML = 0;
+  document.getElementById("body").style.background =
+    "url(images/backgorund.gif)";
 }
 
 function imageChange(id, result, original) {
@@ -81,4 +83,8 @@ function imageChange(id, result, original) {
   setTimeout(() => {
     document.getElementById(id).setAttribute("src", original);
   }, 500);
+}
+
+function gameResult(result) {
+  document.getElementById("body").style.background = result;
 }

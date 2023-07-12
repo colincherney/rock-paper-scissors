@@ -1,4 +1,4 @@
-body {
+#body {
   background: url(images/backgorund.gif);
 }
 
@@ -50,4 +50,13 @@ body {
 .computerScore {
   display: flex;
   gap: 1rem;
+}
+
+.playAgain {
+  font-size: 20px;
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 20px;
+  font-family: "Chela One", cursive;
+  width: 150px;
 }
